@@ -23,6 +23,4 @@ pipeline{
         failure {
             slackSend channel: '#jenkins-ci', color: '#439FE0', message: ' "Build Failed: ${env.JOB_NAME} ${env.BUILD_NUMBER}"', teamDomain: 'mycompany-npv1033', tokenCredentialId: 'jenkins-slack'  }
         }
-    }
-
 }
